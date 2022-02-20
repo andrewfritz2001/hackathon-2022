@@ -7,7 +7,7 @@ class User:
         self.courses_taken = course_list # ["CPTS_121", "CPTS_122", "CPTS_360", "PHIL_201"]
         self.name = ""                   # Robby Bobby
         self.id_num = 0                  # 069696969
-        self.major = ""                  # Rabine Bobology
+        self.major = "CPTS"                  # Rabine Bobology
 
     # function to call a db class with self.major and self.courses_taken. function returns list of classes that are still required. 
     def get_required_courses(self):

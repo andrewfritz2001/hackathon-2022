@@ -1,6 +1,6 @@
 # Will act as current user. Right now program only works with one user at a time, although this can be scaled later
 
-from CourseTaken import CourseTaken
+from course_taken import CourseTaken
 
 class User:
     def __init__(self):

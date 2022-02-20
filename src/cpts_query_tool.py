@@ -1,5 +1,4 @@
-# from search_classes import SearchClasses
-from course_taken import CourseTaken
+from search_classes import SearchClasses
 
 class CptsQueryTool:
 
@@ -24,10 +23,15 @@ class CptsQueryTool:
     def get_req(self, req):
         req = self.cpts_reqs(req)
         output = []
-        for taken_course in self.courses:
-            for i in range(0,len(req.index)):
-                if taken_course.course_name == req.loc[0].at["course"]:
-                    output.append(req.loc[0])
+        taken = False
+        
+        for i in range(0,len(req.index)):
+            for taken_course in self.courses:
+                if taken_course.course_name == req.loc[i].at["course"]:
+                    taken = True
+            if not taken:
+                output.append(req.loc[i])
+            taken = True
 
         return output
 
@@ -71,7 +75,8 @@ class CptsQueryTool:
         pass
 
     def get_dim_reqs(self):
-        pass
+        return self.get_req("required_dim")
+
 
     def get_software_reqs(self):
         pass

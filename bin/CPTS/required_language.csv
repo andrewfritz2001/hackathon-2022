@@ -1,9 +1,9 @@
 courses,course_name,pre_reqs,sequence,credits,rating
 CPTS_121,Program Design and Development C/C++,MATH_171,2,4,0
 CPTS_122,Data Structures C/C++,CPTS_121,1,4,0
-CPTS_223,Advanced Data Structures C/C++,CPTS_122 CC:MATH_216,0,4,0
-CPTS_360,360 Systems Programming C/C++,CPTS_223
-CPTS_131,Program Design and Development Java,MATH_171,2,4
+CPTS_223,Advanced Data Structures C/C++,CPTS_122A:C:MATH_216,0,3,0
+CPTS_360,360 Systems Programming C/C++,CPTS_223A:CPTS_260,0,4,0
+CPTS_131,Program Design and Development Java,MATH_171,2,4,0
 CPTS_132,Data Structures Java,CPTS_131,1,4,0
-CPTS_233,Advanced Data Structures Java,
-CPTS_370,
+CPTS_233,Advanced Data Structures Java,CPTS_132A:C:MATH_216,0,3,0
+CPTS_370,Advanced Data Structures Java,CPTS_223A:CPTS_260,0,4,0

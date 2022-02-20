@@ -1,1 +1,4 @@
-courses,course_name,pre_reqs,sequence,credits,description
+courses,course_name,pre_reqs,sequence,credits,rating
+CPTS_430,Numerical Analysis,MATH_315A:CPTS_121R:CPTS_131R:MATH_300,0,3,0
+CPTS_442,Computer Graphics,CPTS_223A:CPTS_224R:CPTS_360R:CPTS_220,0,3,0
+CPTS_453,Graph Theory,MATH_220R:MATH_225R:MATH_230,0,3,0

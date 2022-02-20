@@ -1,1 +1,12 @@
-courses,course_name,pre_reqs,sequence,credits,description
+courses,course_name,pre_reqs,sequence,credits,rating
+CPTS_260,Intro to Computer Architecture,C:CPTS_223R:C:CPTS_233,2,3,0
+CPTS_302,Pro Skills Computing Engineer,CPTS_122R:CPTS_132,1,3,0
+CPTS_317,Automata and Formal Languages,CPTS_122R:CPTS_132,1,3,0
+CPTS_322,Software Engineering I,CPTS_215R:CPTS_223R:CPTS_233,2,3,0
+CPTS_350,Design & Analysis Algorithms,CPTS_223R:CPTS_233,1,3,0
+CPTS_355,Programming Language Design,CPTS_223R:CPTS_233,1,3,0
+CPTS_421,Software Design Project I,CPTS_321R:C:CPTS_360R:CPTS_370A:CPTS_322,1,3,0
+CPTS_423,Software Design Project II,CPTS_421,0,3,0
+
+	
+  

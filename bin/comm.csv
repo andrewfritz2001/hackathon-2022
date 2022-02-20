@@ -1,1 +1,8 @@
-courses,course_name,pre_reqs,sequence,credits
+courses,course_name,pre_reqs,sequence,credits,rating
+COMM_102,
+COMM_210,
+COMM_400,
+ENG_106,
+FRENCH_361,
+GERMAN_307,
+GERMAN_361,

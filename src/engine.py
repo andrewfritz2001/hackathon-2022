@@ -41,7 +41,9 @@ class Engine:
                 c.course_name = self.normalize_course_name(l[j][1])
                 c.course_title = l[j][2]
                 c.grade = l[j][3]
-                c.credits = float(l[j][4])
+                
+                if l[j][4]:
+                    c.credits = float(l[j][4])
                 c.type = l[j][5]
                 if c.course_title not in [x.course_title for x in taken_course_list]:
                     taken_course_list.append(c)

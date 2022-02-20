@@ -1,1 +1,9 @@
-courses,course_name,pre_reqs,sequence,credits
+courses,course_name,pre_reqs,sequence,credits,rating
+ENGLISH_101,
+ENGLISH_105,
+ENGLISH_201,
+ENGLISH_301,
+ENGLISH_365,
+ENGLISH_402,
+ENGLISH_403,
+PHIL_200,

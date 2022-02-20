@@ -1,1 +1,3 @@
-courses,course_name,pre_reqs,sequence,credits
+courses,course_name,pre_reqs,sequence,credits,rating
+HIST_105,
+HIST_305,

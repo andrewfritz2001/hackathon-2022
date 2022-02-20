@@ -9,3 +9,4 @@ MATH_220,Introductory Linear Algebra,C:MATH_171,2,4,0
 STAT_360,Probability and Statistics,MATH_171R:MATH_202R:MATH_172R:MATH_182,0,3,0
 PHYSICS_201,Physics for Scientists and Engineers I,MATH_171A:C:MATH_172R:C:MATH_182R:C:MATH_273:R:C:MATH_315,1,4,0
 PHYSICS_202,Physics for Scientists and Engineers II,PHYSICS_201R:PHYSICS_205A:MATH_172R:MATH_182,0,4,0
+BIOLOGY_102,General Biology,NONE,0,4,0

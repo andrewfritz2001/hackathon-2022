@@ -32,7 +32,7 @@ class SearchClasses:
     '''
 
     @staticmethod
-    def search__classes(major, category):
+    def search_classes(major, category):
         if major in list(db.keys()) and category in db[major]:
             try:
                 print("PATH: ../bin/{major}/{category}.csv")

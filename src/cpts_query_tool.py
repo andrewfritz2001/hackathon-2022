@@ -10,7 +10,7 @@ class CptsQueryTool:
     1. ucore
     2. required_stem
     3. required_comp_sci
-    4. required_programming
+    4. required_language
     5. machine_learning 
     6. systems
     7. required_dim

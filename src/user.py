@@ -61,7 +61,7 @@ class User:
             return 0.7
         else:
             return 0
-
+    # make a seperate class for this
     # 0 = course couldn't be added (not found or already taken), 1 = course added
     def add_course(self, course_name : str) -> bool:
         pass

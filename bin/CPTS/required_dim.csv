@@ -1,1 +1,6 @@
-courses,course_name,pre_reqs,sequence,credits,description
+courses,course_name,pre_reqs,sequence,credits,rating
+CPTS_315,Introduction to Data Mining,CPTS_215R:CPTS_223R:CPTS_233R:CS_215,0,3,0
+CPTS_415,Big Data,CPTS_215R:CPTS_223R:CPTS_233,0,3,0
+CPTS_451,Intro to Database Systems,CPTS_215R:CPTS_223R:CPTS_233,0,3,0
+CPTS_471,Computational Genomics,CPTS_223R:CPTS_233,0,3,0
+CPTS_475,Data Science,CPTS_215R:CPTS_223R:CPTS_233,0,3,0

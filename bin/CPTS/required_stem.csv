@@ -1,1 +1,11 @@
-courses,course_name,pre_reqs,sequence,credits,description
+courses,course_name,pre_reqs,sequence,credits,rating
+PHIL_201,Introduction to Formal Logic,MATH_101,2,3,0
+MATH_171,Calculus I,MATH_106R:MATH_108,3,4,0
+MATH_172,Calculus II,MATH_171,3,4,0
+MATH_273,Calculus III,MATH_172,1,4,0
+MATH_301,Introduction to Mathematical Thinking,MATH_220R:MATH_225R:MATH_230,0,4,0
+MATH_216,Discrete Structures,MATH_108R:C:MATH_171R:C:MATH_172R:C:MATH_182R:C:MATH_202,2,3,0
+MATH_220,Introductory Linear Algebra,C:MATH_171,2,4,0
+STAT_360,Probability and Statistics,MATH_171R:MATH_202R:MATH_172R:MATH_182,0,3,0
+PHYSICS_201,Physics for Scientists and Engineers I,MATH_171A:C:MATH_172R:C:MATH_182R:C:MATH_273:R:C:MATH_315,1,4,0
+PHYSICS_202,Physics for Scientists and Engineers II,PHYSICS_201R:PHYSICS_205A:MATH_172R:MATH_182,0,4,0

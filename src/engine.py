@@ -2,6 +2,10 @@ import camelot
 import copy
 import pandas as pd
 
+import PyPDF2
+# import re
+# import io
+
 from user import User
 from course_taken import CourseTaken
 
@@ -12,7 +16,10 @@ class Engine:
     def __init__(self,pdf):
         course_list = self.compute_taken_courses(pdf)
         self.user = User(course_list)
-
+        self.get_user_from_pdf(pdf)
+        (name,id_num) = self.get_user_from_pdf(pdf)
+        self.user.name = name
+        self.user.id_num = id_num
 
     # transfers pds to a list of camelot tables
     def pdf_to_dataframes(self,pdf):
@@ -34,9 +41,10 @@ class Engine:
                 c.course_name = self.normalize_course_name(l[j][1])
                 c.course_title = l[j][2]
                 c.grade = l[j][3]
-                c.credits = l[j][4]
+                c.credits = float(l[j][4])
                 c.type = l[j][5]
-                taken_course_list.append(c)
+                if c.course_title not in [x.course_title for x in taken_course_list]:
+                    taken_course_list.append(c)
         print("done")
         return taken_course_list
 
@@ -45,4 +53,29 @@ class Engine:
         name = name.replace("CPT_S", "CPTS")
         return name
 
+    def get_user_from_pdf(self,pdf):
+        file = open(pdf,'rb')
+        pdfReader = PyPDF2.PdfFileReader(file)
+        page = pdfReader.getPage(0)
+        text = page.extractText()
         
+        text = text[21:] # skipping over "Academic Requirements"
+        id_index = text.index(":")
+        name = text[:id_index-2]
+        id_num = text[id_index+2:id_index+11]
+        return (name,id_num)
+
+    def get_user_name(self):
+        return self.user.name
+    
+    def get_user_id(self):
+        return self.user.id_num
+
+    def get_user_tcredits(self):
+        return self.user.get_total_credits()
+
+    def get_user_dcredits(self):
+        return self.user.get_upperd_credits()
+
+    def get_user_gpa(self):
+        return round(self.user.get_gpa(),2)

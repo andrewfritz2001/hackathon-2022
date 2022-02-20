@@ -1,4 +1,3 @@
-from user import User
 from engine import Engine
 
 import tkinter as tk
@@ -34,19 +33,31 @@ class Menu1:
     def transform_window(self,engine):
         self.file_upload.grid_forget()
 
-        name = tk.Label(self.frame, text="Name : Andrew Fritz")
-        id = tk.Label(self.frame, text="ID# : 011669166")
+        name = tk.Label(self.frame, text=f"Name : {engine.get_user_name()}")
+        id = tk.Label(self.frame, text=f"ID# : {engine.get_user_id()}")
+        
         total_credits = tk.Label(self.frame, text="Total Credits : ")
+        total_credits_calc = tk.Label(self.frame, text = f"{engine.get_user_tcredits()} / 140")
+
         upper_div_credits = tk.Label(self.frame, text="Upper-Div Credits : ")
+        upper_div_credits_calc = tk.Label(self.frame, text=f"{engine.get_user_dcredits()} / 40")
+        
         gpa = tk.Label(self.frame, text="GPA : ")
+        gpa_calc = tk.Label(self.frame, text=f"{engine.get_user_gpa()}")
+        
         ucore_classes = tk.Label(self.frame, text="UCORE Classes")
         major_classes = tk.Label(self.frame, text="Major-Specific Classes")
         
         name.grid(row = 0, column = 0, padx = 10, pady = 10)
         id.grid(row = 0, column = 1, padx = 10, pady = 10)
+
         total_credits.grid(row = 1, column = 0, padx = 10, pady = 10)
+        total_credits_calc.grid(row = 1, column = 1, padx = 10, pady = 10)
         upper_div_credits.grid(row = 2, column = 0, padx = 10, pady = 10)
+        upper_div_credits_calc.grid(row = 2, column = 1, padx = 10, pady = 10)
         gpa.grid(row = 3, column = 0, padx = 10, pady = 10)
+        gpa_calc.grid(row = 3, column = 1, padx = 10, pady = 10)
+
         ucore_classes.grid(row = 4, column = 0, padx = 10, pady = 10)
         major_classes.grid(row = 5, column = 0, padx = 10, pady = 10)
         

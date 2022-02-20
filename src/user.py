@@ -24,16 +24,18 @@ class User:
     def get_upperd_credits(self):
         sum = 0
         for course in self.courses_taken:
-            if int(course.course_name[-3:]) <= 300:
-                sum += course.credits
+            if (course.course_name[-3:]).isdigit():
+                if int(course.course_name[-3:]) >= 300:
+                    sum += course.credits
         return sum 
 
     def get_gpa(self):
         total_sum  = 0.0
         credit_sum = 0.0
         for course in self.courses_taken:
-            credit_sum += course.credits
-            total_sum += self.get_grade(course.grade)*course.credits
+            if self.get_grade(course.grade) > 0:
+                credit_sum += course.credits
+                total_sum += self.get_grade(course.grade)*course.credits
         return total_sum / credit_sum
 
     def get_grade(self,str):
@@ -59,8 +61,10 @@ class User:
             return 1.0
         elif str == "D-":
             return 0.7
-        else:
+        elif str == "F":
             return 0
+        else:
+            return -1
 
     # 0 = course couldn't be added (not found or already taken), 1 = course added
     def add_course(self, course_name : str) -> bool:

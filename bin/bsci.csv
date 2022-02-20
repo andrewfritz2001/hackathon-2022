@@ -1,35 +1,13 @@
 courses,course_name,pre_reqs,sequence,credits,rating
-ANIM_SCI_205,Companion Animal Nutrition,,0,3,0
 ANTH_260,Companion Animal Nutrition,,0,4,0
-ANTH_268,Primate Behavioral Ecology,,0,3,0
-ANTH_280,Sex Evolution and Human Nature,,0,3,0
-ANTH_381,Skeleton Keys: Introduction to Forensic Anthropology,,0,3,0
-BIOLOGY_101,Biology of Humans,,0,3,0
 BIOLOGY_102,General Biology,NONE,0,4,0
 BIOLOGY_106,Introductory Biology: Organismal Biology,,0,4,0
 BIOLOGY_107,Introductory Biology: Cell Biology and Genetics,,0,4,0
-BIOLOGY_111,Laboratory Experiments in Biology and Genetics,,0,1,0
 BIOLOGY_120, Introductory Botany,,0,4,0                      
-BIOLOGY_140,Introduction to Nutritional Science,,0,3,0
-BIOLOGY_150,Evolution,,0,3,0
-BIOLOGY_298,Honors Biology for Non-Science Majors,,0,4,0
-BIOLOGY_308,Marine Ecology,,0,3,0
-BIOLOGY_333,Human Nutrition and Health,,0,3,0
-ENTOM_101,Insects and People: A Perspective,,0,3,0
-ENTOM_103,Discover Insects: Laboratory for Non-Science Majors,,0,1,0
-ENTOM_150,Insects Science and World Cultures,,0,3,0
-ENTOM_201,Science in the Public Eye,,0,3,0
-FS_201,Science on Your Plate,,0,3,0
 HORT_150,Science and Art of Growing Plants,,0,4,0
 MBIOS_101,Introductory Microbiology,0,4,0
-MBIOS_320,DNA and Society,,0,3,0
-NEUROSCI_105,Meet Your Brain,,0,3,0
-NEUROSCI_150,Art and the Brain,,0,3,0
-PSYCH_372,Biological Basis of Behavior,,0,3,0
 SCIENCE_102,Integrated Science: Dynamic Systems of the Natural World,,0,4,0
 SOE_110,The Environment Human Life and Sustainability,,0,4,0
-SOIL_SCI_201,Introductory Soil Science Laboratory,,0,3,0
-SOIL_SCI_202,SoilA: A Living System,,0,1,0
 
 
 

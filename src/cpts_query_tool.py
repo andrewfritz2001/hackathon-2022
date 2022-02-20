@@ -3,7 +3,6 @@ from search_classes import SearchClasses
 class CptsQueryTool:
 
     def __init__(self, major, courses_taken):
-        self.cpts_reqs = SearchClasses(major)
         self.courses = courses_taken
 
     """
@@ -21,7 +20,7 @@ class CptsQueryTool:
     """
 
     def get_req(self, req):
-        req = self.cpts_reqs(req)
+        req = SearchClasses.search__classes(self.major,req)
         output = []
         taken = False
         
@@ -39,16 +38,17 @@ class CptsQueryTool:
     # Use CSV File Names as tiny databases
     def get_all_reqs(self):
         output = []
-        output.append(self.get_req("ucore"))
-        output.append(self.get_req("required_stem"))
-        output.append(self.get_req("required_comp_sci"))
-        output.append(self.get_req("required_programming"))
-        output.append(self.get_req("machine_learning"))
-        output.append(self.get_req("systems"))
-        output.append(self.get_req("required_dim"))
-        output.append(self.get_req("required_software"))
-        output.append(self.get_req("visual_computing"))        
+        #output.append(self.get_req("ucore"))
         output.append(self.get_req("free_electives"))
+        output.append(self.get_req("machine_learning"))
+        output.append(self.get_req("required_comp_sci"))
+        output.append(self.get_req("required_dim"))
+        output.append(self.get_req("required_language"))
+        output.append(self.get_req("required_security"))
+        output.append(self.get_req("required_software"))
+        output.append(self.get_req("required_stem"))
+        output.append(self.get_req("systems"))
+        output.append(self.get_req("visual_computing"))        
         return output
 
 
